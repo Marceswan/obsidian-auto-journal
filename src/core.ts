@@ -21,7 +21,7 @@ export default class Core {
 	}
 
 	async run() {
-		this.dailyFileFormat = `${this.settings.yearFormat}/${this.settings.monthFormat}/${this.settings.dayFormat} -`;
+		this.dailyFileFormat = `${this.settings.yearFormat}/${this.settings.monthFormat}/${this.settings.dayFormat} - dddd`;
 		this.monthlyFileFormat = `${this.settings.yearFormat}/[${this.settings.monthlyNotesFolderName}]/${this.settings.monthFormat} -`;
 
 		if (this.settings.dailyNotesEnabled) {
